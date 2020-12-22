@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*  removes scroll bar from UI*/
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+/* using pseudo element to remove scroll bar from UI in Chrome, Safari and Opera */
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Add smoth scroll doesn't work in all browsers */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #e3e3e3;
+    /* background-color: snow; */
+    color: #808080;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #808080;
+}
+
+.title {
+    color: snow;
+    font-weight: 500;
+}
